@@ -129,7 +129,7 @@ class UI
             <div>
             <h4>${item.title}</h4>
             <h5>Rs.${item.price}</h5>
-            <button class="remove-item" data-id=${item.id} >X</button>
+            <button class="remove-item" data-id=${item.id}>X</button>
             </div>
             <div>
             <i class="fas fa-chevron-up" data-id=${item.id}></i>
@@ -166,7 +166,7 @@ class UI
     cartLogic()
     {   //clear cart
         clearCartBtn.addEventListener('click',()=>{
-            this.clearCart();
+        this.clearCart();
         });
         //cart functionality
         cartContent.addEventListener('click',event=>{
@@ -210,7 +210,7 @@ class UI
     }
     clearCart()
     {
-        let cartItems=cart.map(item => item.id);
+        let cartItems=cart.map(item =>item.id);
         cartItems.forEach(id =>this.removeItem(id));
         while(cartContent.children.length>0)
         {
