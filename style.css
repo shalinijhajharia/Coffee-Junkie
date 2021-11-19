@@ -1,0 +1,299 @@
+@import url('http://fonts.googleapis.com/css?family=La+Belle+Aurore|Open+Sans');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root
+{
+    --brightYellow:#E3B505;
+    --darkBrown:#BB9457;
+    --yellow:rgb(242,180,80);
+    --brown:#382923;
+    --black:#191919;
+    --grey:#A9B2AC;
+}
+body
+{
+    font-family: 'Open Sans',sans-serif;
+    background:linear-gradient(rgba(255,255,255,0.85),rgba(255,255,255,0.85)),url('https://www.mayoclinichealthsystem.org/-/media/national-files/images/hometown-health/2020/cup-of-coffee-on-coffee-beans.jpg')center/cover fixed no-repeat;
+    color:var(--black);
+
+}
+.bell-fonts
+{
+    font-family: 'La Belle Aurore',cursive;
+}
+.section-padding
+{
+    padding: 3rem 0;
+
+
+}
+.grid-container
+{
+    max-width: 90vm;
+    margin: 2rem auto;
+    display: grid;
+    grid-row-gap: 2rem;
+}
+/*to make both about us image eual*/
+@media screen  and (min-width:768px){
+    .grid-container--medium-2
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 4rem;
+
+    }
+    .grid-container
+    {
+        max-width: 75vw;
+    }
+    
+}
+/*section*/
+.section-title
+{
+    padding: 1rem 0.5rem;
+
+}
+.section-title__name
+{
+    font-size: 3rem;
+    text-transform: capitalize;
+
+}
+.section-title__underline
+{
+    background: var(--yellow);
+    width: 14rem;
+    height: 0.25rem;
+}
+.section-title__text
+{
+    letter-spacing:0.1rem ;
+    line-height: 1.5;
+    margin-top: 1rem;
+    color:var(--black);
+
+}
+
+
+.header
+{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+@media screen and (max-width:768px) {
+    .header
+    {
+        background:url('https://www.mayoclinichealthsystem.org/-/media/national-files/images/hometown-health/2020/cup-of-coffee-on-coffee-beans.jpg')center/cover fixed no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+
+    }
+    
+}
+.banner
+{
+    text-align: center;
+    z-index: 3; 
+
+}
+.banner__title
+{
+    font-size: 4rem;
+    text-transform: capitalize;
+    color: var(--brightYellow);
+}
+@media screen and  (min-width: 768px){
+    .banner__title
+    {
+        font-size: 9rem;
+
+    }
+}
+.banner__social-icon
+{
+    display: block;
+    text-decoration: none;
+    color: var(--black);
+    border: 0.1rem solid var(--black);
+    border-radius: 50%;
+    padding: 0.25rem;
+    transition: all 0.5s linear;
+}
+.banner__social-icon:hover
+{
+    background:var(--brightYellow);
+    color:var(--black);
+
+}
+.banner__icons
+{
+    width: 50%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2rem 2rem 2rem 2rem;
+    grid-column-gap: 0.5rem;
+    justify-content: center;
+
+}
+
+.video__container
+{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.video__item
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+.container
+{
+    display: flex;
+    flex-direction: row;
+}
+.left
+{
+    background-color: rgba(89, 25, 25, 1);
+    width: 70%;
+    height: 750px;
+}
+.right
+{
+    background-image: url("coffee_img.jfif");
+    width: 50%;
+    height: 750px;
+    background-repeat: no-repeat;
+   background-size: 99% 100%;
+
+}
+h1
+{
+    color: rgba(240, 147, 95, 1);
+    font-size: 50px;
+}
+h2{
+    color: rgba(240, 147, 95, 1);
+}
+.navBtn
+{
+    position: fixed;
+    top:5%;
+    right: 5%;
+    font-size: 3.5rem;
+    color:var(--yellow);
+    cursor: pointer;
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes pulse
+{
+    0%
+    {
+        transform: scale(1);
+    }
+    50%
+    {
+        transform: scale(1.1);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
+}
+
+.nav
+{
+    position: fixed;
+    top:0;
+    left: 0;
+    height: 100%;
+    /*width: 10rem;*/
+    background: rgba(242,180,80,0.9);
+    z-index: 3;
+
+}
+
+/*for hiding navigation button */
+.nav
+{
+    width: 0;
+    overflow: hidden;
+    transition: all 0.5s  linear;
+}
+/* shows hidden parts */
+.nav--show
+{
+    width: 10rem;
+}
+.nav__links
+{
+    list-style-type: none;
+}
+.nav__single-link
+{
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--brown);
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem ;
+    transition: all 0.4s ease-in-out;
+}
+.nav__single-link:hover
+{
+    background: var(--brown);
+    color:rgba(242,180,80,0.9);
+    padding-left: 1.5rem;
+
+}
+
+/* about */
+/*gap between image and text*/
+.about-container
+{
+    display: grid;
+    grid-template-columns: 90% ;
+    grid-template-rows: auto 1fr;
+    grid-gap: 2rem;
+
+}
+.about__img-item
+{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 0.25rem;
+
+}
+@media screen and (min-width:768px) {
+    /* to flip the img*/
+    .about__img-special
+    {
+        order: -1;
+
+    }
+    .about-container
+    {
+        grid-template-rows:  1fr 1fr;
+    }
+    
+}

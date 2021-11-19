@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="login.css">
+    
+</head>
+<body>
+    
+
+    <div class="form">
+        <div class="login-page">
+        <div class="form1">
+         <div class="text-center">
+            
+            <img src="profile.png" alt="Metis Logo" style="width: 100px; border-radius: 50%;">
+                   
+           
+            <h3>SIGN UP/LOGIN</h3>
+            <!--<form class="register-form" onsubmit=" return Validatee()" name="myform"  method="POST" >--->
+               
+            
+
+
+            
+            
+          <!---- <form class="login-form" onsubmit=" return validate()" action="cart1.html" method="POST" name="myform1">--->
+                <input type="text" name="username" placeholder="username" id="username"/><br>
+                <span id="text"></span><br><br>
+                <input type="password" name="pass" placeholder="password" id="pass"><br>
+                <span id="text1"></span><br><br>
+                <button type="submit" name="login" id="login" onclick="login()">Login</button>
+                <p class="message">Not Registered? <a href="signup.html">Register</a></p>
+                
+            
+            
+        </div>
+        </div>
+      
+        </div>
+        <script src='https://code.jquery.com/jquery-3.4.1.min.js'>
+        </script>
+        
+        <script>
+            $('.message a').click(function()
+            {
+                $('form').animate({height:"toggle",opacity:"toggle"},"slow");
+            });
+        </script>
+        
+        <script>
+           
+            function validate()
+            {
+                var a = document.getElementById("username").value;
+                var b = document.getElementById("pass").value;
+                if(a=="")
+                {
+                    document.getElementById("text").innerHTML="plzz enter username";
+                    return false;
+                }
+                if(b=="")
+                {
+                    document.getElementById("text1").innerHTML="plzz enter  password";
+                    return false;
+                }
+                
+            
+            }
+            function login()
+            {
+                var name=document.getElementById("username").value;
+                var pass=document.getElementById("pass").value;
+
+                var lname=localStorage.getItem("username")
+                var lpass=localStorage.getItem("password")
+
+                if(name==lname && pass==lpass)
+                {
+                    window.location.href="cart1.html";
+                }
+                else{
+                    alert("username and password are incorrect please enter valid username and password");
+                }
+            }
+            
+        </script>
+        <table border="0" width="100%"  height="7%">
+            <tr>
+            <td align="center"><font color="white"></font></td>
+            </tr>
+            
+        </table>
+     </div>
+     
+ <!--<script src="login.js"></script> -->
+</body>
+</html>

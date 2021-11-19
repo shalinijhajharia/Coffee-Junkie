@@ -1,0 +1,68 @@
+{
+  "items": [
+    {
+      "sys": { "id": "1" },
+      "fields": {
+        "title": "frappuccino coffee,281 ml",
+        "price": 400,
+        "image": { "fields": { "file": { "url": "https://www.thelist.com/img/gallery/what-happens-to-your-body-when-you-drink-a-frappuccino-every-day/intro-1588867332.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "title": "Latte",
+        "price": 85,
+        "image": { "fields": { "file": { "url": "https://www.gannett-cdn.com/media/2019/01/18/USATODAY/usatsports/gettyimages-500740897.jpg?crop=1365,768,x0,y0&width=660&height=372&format=pjpg&auto=webp" } } }
+      }
+    },
+    {
+      "sys": { "id": "3" },
+      "fields": {
+        "title": "Frappe,281 ml",
+        "price": 700,
+        "image": { "fields": { "file": { "url": "https://vaya.in/recipes/wp-content/uploads/2018/02/Caramel-Apple-Frappe.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "4" },
+      "fields": {
+        "title": "Macchiato,281 ml",
+        "price": 400,
+        "image": { "fields": { "file": { "url": "https://image.freepik.com/free-photo/delicious-organic-latte-macchiato-with-milk_23-2148420329.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "5" },
+      "fields": {
+        "title": "Caramel Macchiato ,281 ml",
+        "price": 378,
+        "image": { "fields": { "file": { "url": "https://bonteacafe.com/media/bontea/media/2021/04/27/iced-caramel-macchiato.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "6" },
+      "fields": {
+        "title": "Americano",
+        "price": 1280,
+        "image": { "fields": { "file": { "url": "https://cdn.buttercms.com/AB7ud4YSE6nmOX0iGlgA" } } }
+      }
+    },
+    {
+      "sys": { "id": "7" },
+      "fields": {
+        "title": "Coconut Mocha,281 ml",
+        "price": 499,
+        "image": { "fields": { "file": { "url": "https://www.chocolatemoosey.com/wp-content/uploads/2016/03/Toasted-Coconut-Mochas-2252.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "8" },
+      "fields": {
+        "title": "Iced Coffee,300 ml",
+        "price": 700,
+        "image": { "fields": { "file": { "url": "https://imagesvc.meredithcorp.io/v3/mm/image?q=85&c=sc&poi=face&w=2000&h=1000&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F19%2F2018%2F02%2F13%2Ficed-coffee-hero-2000.jpg" } } }
+      }
+    }
+  ]
+}

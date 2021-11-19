@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUY COFFEE</title>
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--custom css-->
+    <link rel="stylesheet" href="cart1css.css">
+  
+</head>
+<body>
+   <script>
+       function logout()
+       {
+           window.location.href="home.html";
+       }
+   </script>
+   
+    <!--nav bar-->
+    <nav class="navbar">
+        <div class="navbar-center">
+            <span class="nav-icon">
+                <img src="coffee_logo.png" alt="coffee_logo" height="60" width="60" style="border-radius: 45%;">
+            </span>
+            <h1> <b>WELCOME:</b>  <script>document.write(localStorage.getItem("username"))</script> </h1>
+            <div class="cart-btn">
+                <span class="nav-icon">
+                    <i class="fas fa-cart-plus"></i>
+                </span>
+                <div class="cart-items">0</div>
+            </div>
+            <div>
+                <button  class="clear-cart banner-btn" onclick="logout()">LOGOUT</button>
+            </div>
+        </div>
+        
+    </nav>
+    <!--end of nav bar-->
+    <!--COFFEES-->
+    <section class="products">
+        <div class="section-title">
+            <h2>Our Coffees</h2>
+        </div>
+        <div class="products-center">
+            <!--single products-->
+            <!---<article class="product">
+                <div class="img-container">
+                    <img src="https://www.thelist.com/img/gallery/what-happens-to-your-body-when-you-drink-a-frappuccino-every-day/intro-1588867332.jpg" alt="product" class="product-img" />
+                    <button class="bag-btn" data-id="1">
+                        <i class="fas fa-shopping-cart"></i>ADD TO BAG
+                    </button>
+                </div>
+                <h3>frappuccino coffee,281 ml</h3>
+                <h4>Rs.400</h4>
+            </article>
+            <article class="product">
+                <div class="img-container">
+                    <img src="https://www.gannett-cdn.com/media/2019/01/18/USATODAY/usatsports/gettyimages-500740897.jpg?crop=1365,768,x0,y0&width=660&height=372&format=pjpg&auto=webp" alt="product" class="product-img" />
+                    <button class="bag-btn" data-id="2">
+                        <i class="fas fa-shopping-cart"></i>ADD TO BAG
+                    </button>
+                </div>
+                <h3> Latte</h3>
+                <h4>Rs.85</h4>
+            </article>
+            <article class="product">
+                <div class="img-container">
+                    <img src="https://vaya.in/recipes/wp-content/uploads/2018/02/Caramel-Apple-Frappe.jpg" alt="product" class="product-img" />
+                    <button class="bag-btn" data-id="3">
+                        <i class="fas fa-shopping-cart"></i>ADD TO BAG
+                    </button>
+                </div>
+                <h3>Frappe,281 ml</h3>
+                <h4>Rs.700</h4>
+            </article>
+            <article class="product">
+                <div class="img-container">
+                    <img src="https://image.freepik.com/free-photo/delicious-organic-latte-macchiato-with-milk_23-2148420329.jpg" alt="product" class="product-img" />
+                    <button class="bag-btn" data-id="4">
+                        <i class="fas fa-shopping-cart"></i>ADD TO BAG
+                    </button>
+                </div>
+                <h3>Macchiato,281 ml</h3>
+                <h4>Rs.400</h4>
+            </article>
+            <article class="product">
+                <div class="img-container">
+                    <img src="https://bonteacafe.com/media/bontea/media/2021/04/27/iced-caramel-macchiato.jpg" alt="product" class="product-img" />
+                    <button class="bag-btn" data-id="5">
+                        <i class="fas fa-shopping-cart"></i>ADD TO BAG
+                    </button>
+                </div>
+                <h3>Caramel Macchiato ,281 ml</h3>
+                <h4>Rs.378</h4>
+            </article>
+            <article class="product">
+                <div class="img-container">
+                    <img src="https://cdn.buttercms.com/AB7ud4YSE6nmOX0iGlgA" alt="product" class="product-img" />
+                    <button class="bag-btn" data-id="6">
+                        <i class="fas fa-shopping-cart"></i>ADD TO BAG
+                    </button>
+                </div>
+                <h3>Americano </h3>
+                <h4>Rs.1280</h4>
+            </article>
+            <article class="product">
+                <div class="img-container">
+                    <img src="https://www.chocolatemoosey.com/wp-content/uploads/2016/03/Toasted-Coconut-Mochas-2252.jpg" alt="product" class="product-img" />
+                    <button class="bag-btn" data-id="7">
+                        <i class="fas fa-shopping-cart"></i>ADD TO BAG
+                    </button>
+                </div>
+                <h3>Coconut Mocha,281 ml</h3>
+                <h4>Rs.499</h4>
+            </article>
+            <article class="product">
+                <div class="img-container">
+                    <img src="https://imagesvc.meredithcorp.io/v3/mm/image?q=85&c=sc&poi=face&w=2000&h=1000&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F19%2F2018%2F02%2F13%2Ficed-coffee-hero-2000.jpg" alt="product" class="product-img" />
+                    <button class="bag-btn" data-id="8">
+                        <i class="fas fa-shopping-cart"></i>ADD TO BAG
+                    </button>
+                </div>
+                <h3>Iced Coffee,300 ml</h3>
+                <h4>Rs.700</h4>
+            </article>
+            --->
+            
+        </div>
+    </section>
+    <!--end of single products-->
+    <!--cart-->
+            <div class="cart-overlay">
+                <div class="cart">
+                    <span class="close-cart">
+                        <i class="fas fa-window-close">
+                        </i>
+                    </span>
+                    <h2>Your Cart</h2>
+                    <div class="cart-content">
+                        <!---cart item-->
+                        <div class="cart-item">
+                           <!--- <img src="https://www.thelist.com/img/gallery/what-happens-to-your-body-when-you-drink-a-frappuccino-every-day/intro-1588867332.jpg" alt="product">
+                            <div>
+                                <h4>frappuccino coffee</h4>
+                                <h5>Rs.400</h5>
+                                <span class="remove-item">remove</span>
+                            </div>
+                            <div>
+                            <i class="fas fa-chevron-up"></i>
+                            <p class="item-amount">1</p>
+                            <i class="fas fa-chevron-down"></i>
+                            </div>
+                        -->
+                        </div>
+
+                        <!---close cart item-->
+
+                    </div>
+                    <div class="cart-footer">
+                        <h3>Your total: Rs.<span class="cart-total">0</span></h3>
+                        <button class="clear-cart banner-btn">Clear Cart</button>
+                        <button class="clear-cart banner-btn" onclick="InVoice()">InVoice</button>
+                    </div>
+                </div>
+            </div>
+            <!--cart end-->
+        </div>
+    
+    <!--END OF COFFEES-->
+   
+    <script src="cart1.js"></script>
+</body>
+</html>
